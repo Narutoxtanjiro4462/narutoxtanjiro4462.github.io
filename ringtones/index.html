@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Ringtones | AnimeVerse</title>
+  <meta name="description" content="Download free anime ringtones. Naruto, One Piece, Jujutsu Kaisen and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0f0f0f;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .list {
+      max-width: 600px;
+      margin: auto;
+    }
+    .ring {
+      background: #141414;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    a {
+      color: #ff4d4d;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    .back {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🎵 Anime Ringtones</h1>
+
+<div class="list" id="ringtones"></div>
+
+<div class="back">
+  <a href="../">⬅ Back to Home</a>
+</div>
+
+<script>
+  const totalRingtones = 20; // 👈 CHANGE ONLY THIS NUMBER
+  const container = document.getElementById("ringtones");
+
+  for (let i = 1; i <= totalRingtones; i++) {
+    container.innerHTML += `
+      <div class="ring">
+        <strong>Ringtone ${i}</strong>
+        <audio controls src="ring${i}.mp3"></audio>
+        <a href="ring${i}.mp3" download>Download</a>
+      </div>
+    `;
+  }
+</script>
+
+</body>
+</html
