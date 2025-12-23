@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>AnimeVerse | 4K Wallpapers & Ringtones</title>
+
+  <!-- Google Site Verification (KEEP THIS) -->
   <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
+
+  <!-- SEO -->
+  <meta name="description" content="Download high-quality 4K anime wallpapers and anime ringtones. Naruto, One Piece, Jujutsu Kaisen and more.">
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -12,29 +20,54 @@
       background: #0d0d0d;
       color: #ffffff;
     }
+
     header {
       background: #111;
       padding: 20px;
       text-align: center;
     }
+
     header h1 {
       color: #ff4757;
+      margin-bottom: 10px;
     }
+
     nav a {
+      margin: 0 10px;
       color: #fff;
-      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
     }
+
+    nav a:hover {
+      color: #ff4757;
+    }
+
     section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 20px;
+      gap: 20px;
     }
+
     .card {
-      background: #1c1c1c;
+      background: #111;
       padding: 20px;
-      margin-bottom: 15px;
       border-radius: 8px;
+      width: 280px;
+      text-align: center;
     }
+
+    .card h2 {
+      color: #ff4757;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
     button {
       background: #ff4757;
       border: none;
@@ -42,7 +75,13 @@
       color: #fff;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 10px;
     }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
     footer {
       background: #111;
       text-align: center;
@@ -52,36 +91,43 @@
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>AnimeVerse</h1>
-<nav>
-  <a href="./">Home</a>
-  <a href="./wallpapers/">Wallpapers</a>
-  <a href="#">Ringtones</a>
-</nav>
-</header>
+  <header>
+    <h1>AnimeVerse</h1>
+    <nav>
+      <a href="./">Home</a>
+      <a href="./wallpapers/">Wallpapers</a>
+      <a href="./ringtones/">Ringtones</a>
+    </nav>
+  </header>
 
-<section>
-  <div class="card">
-    <h2>🔥 4K Anime Wallpapers</h2>
-    <p>High-quality anime wallpapers for mobile & desktop.</p>
-    <a href="wallpapers/">
-  <button>Explore Wallpapers</button>
-    </a>
-  </div>
+  <section>
 
-  <div class="card">
-  <button disabled style="opacity:0.5; cursor:not-allowed;">
-  Ringtones (Coming Soon)
-  </button>
-  </div>
-</section>
+    <!-- Wallpapers Card -->
+    <div class="card">
+      <h2>🔥 4K Anime Wallpapers</h2>
+      <p>High-quality anime wallpapers for mobile & desktop.</p>
+      <a href="./wallpapers/">
+        <button>Explore Wallpapers</button>
+      </a>
+    </div>
 
-<footer>
-  © 2025 AnimeVerse | Fan-made content
-</footer>
+    <!-- Ringtones Card -->
+    <div class="card">
+      <h2>🎵 Anime Ringtones</h2>
+      <p>Download high-quality anime ringtones.</p>
+      <a href="./ringtones/">
+        <button>Explore Ringtones</button>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 AnimeVerse | Fan-made content
+  </footer>
 
 </body>
-  </html>
+</html>
