@@ -2,74 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anime Ringtones | AnimeVerse</title>
-  <meta name="description" content="Download free anime ringtones. Naruto, One Piece, Jujutsu Kaisen and more.">
+  <title>Ringtones | AnimeVerse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       padding: 20px;
-      background: #0f0f0f;
-      color: #ffffff;
+      background: #0d0d0d;
+      color: #fff;
       font-family: Arial, sans-serif;
     }
+
     h1 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-    .list {
-      max-width: 600px;
-      margin: auto;
-    }
+
     .ring {
-      background: #141414;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      background: #111;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
+
     audio {
-      width: 100%;
-      margin-top: 10px;
+      width: 60%;
     }
+
     a {
-      color: #ff4d4d;
+      color: #00ffcc;
       text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 8px;
-    }
-    .back {
-      text-align: center;
-      margin-top: 30px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<h1>🎵 Anime Ringtones</h1>
+<h1>Ringtones</h1>
 
-<div class="list" id="ringtones"></div>
-
-<div class="back">
-  <a href="../">⬅ Back to Home</a>
-</div>
+<div id="list"></div>
 
 <script>
-  const totalRingtones = 20; // 👈 CHANGE ONLY THIS NUMBER
-  const container = document.getElementById("ringtones");
+  const container = document.getElementById("list");
 
-  for (let i = 1; i <= totalRingtones; i++) {
-    container.innerHTML += `
-      <div class="ring">
-        <strong>Ringtone ${i}</strong>
-        <audio controls src="ring${i}.mp3"></audio>
-        <a href="ring${i}.mp3" download>Download</a>
-      </div>
+  for (let i = 1; i <= 100; i++) {
+    const file = `ring${i}.mp3`;
+
+    const div = document.createElement("div");
+    div.className = "ring";
+
+    div.innerHTML = `
+      <span>Ring ${i}</span>
+      <audio controls src="./${file}"></audio>
+      <a href="./${file}" download>Download</a>
     `;
+
+    container.appendChild(div);
   }
 </script>
 
 </body>
-</html
+</html>
