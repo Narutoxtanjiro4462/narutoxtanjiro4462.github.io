@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
-  <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
-
   <title>AnimeVerse | 4K Anime Wallpapers & Ringtones</title>
-  <meta name="description" content="Download premium 4K anime wallpapers and anime ringtones. Built for true anime fans.">
+
+  <!-- ✅ GOOGLE SEARCH CONSOLE -->
+  <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_CODE_HERE" />
+
+  <!-- SEO -->
+  <meta name="description" content="AnimeVerse – Download premium 4K anime wallpapers and anime ringtones. Naruto, Goku, Gojo and more.">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,204 +17,127 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
       color: #fff;
-      animation: fadeIn 0.6s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* 🔝 GLASS NAVBAR */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(15,15,15,0.7);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      padding: 16px;
       text-align: center;
+    }
+
+    header {
+      padding: 30px 20px;
     }
 
     header h1 {
-      margin: 0;
       color: #ff4d4d;
+      font-size: 36px;
+      margin-bottom: 10px;
       letter-spacing: 1px;
     }
 
-    header nav {
-      margin-top: 8px;
+    nav {
+      margin-top: 10px;
     }
 
-    header nav a {
-      margin: 0 12px;
-      color: #ccc;
+    nav a {
+      color: #fff;
       text-decoration: none;
-      font-size: 14px;
+      margin: 0 15px;
       font-weight: bold;
+      opacity: 0.85;
     }
 
-    header nav a:hover {
+    nav a:hover {
+      opacity: 1;
       color: #ff4d4d;
     }
 
-    /* 🔥 HERO SECTION */
     .hero {
-      padding: 80px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .hero .buttons {
-      margin-top: 35px;
-    }
-
-    .hero a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 26px;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #ff4d4d, #ff7a18);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.2s ease;
-    }
-
-    .hero a:hover {
-      opacity: 0.9;
-    }
-
-    /* 📦 FEATURE CARDS */
-    .section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
     }
 
     .card {
-      background: #141414;
+      background: #111;
+      border-radius: 14px;
       padding: 30px;
-      border-radius: 16px;
-      text-align: center;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      width: 300px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px rgba(255,77,77,0.3);
     }
 
-    .card h3 {
+    .card h2 {
+      margin-top: 0;
       color: #ff4d4d;
-      margin-bottom: 12px;
     }
 
     .card p {
-      color: #bbb;
       font-size: 14px;
-      line-height: 1.5;
+      color: #ccc;
+      margin-bottom: 25px;
     }
 
-    .card a {
+    .btn {
       display: inline-block;
-      margin-top: 18px;
-      padding: 10px 20px;
-      background: #ff4d4d;
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #ff4d4d, #ff784d);
       color: #fff;
-      border-radius: 8px;
       text-decoration: none;
+      border-radius: 25px;
       font-weight: bold;
+      transition: opacity 0.3s ease;
     }
 
-    .card a:hover {
+    .btn:hover {
       opacity: 0.9;
     }
 
-    /* 🔚 FOOTER */
     footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid #222;
+      margin-top: 80px;
+      padding: 20px;
+      font-size: 13px;
+      color: #aaa;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- 🔝 NAVBAR -->
-  <header>
-    <h1>AnimeVerse</h1>
-    <nav>
-      <a href="./">Home</a>
-      <a href="./wallpapers/">Wallpapers</a>
-      <a href="./ringtones/">Ringtones</a>
-    </nav>
-  </header>
+<header>
+  <h1>AnimeVerse</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/wallpapers/">Wallpapers</a>
+    <a href="/ringtones/">Ringtones</a>
+  </nav>
+</header>
 
-  <!-- 🔥 HERO -->
-  <section class="hero">
-    <h2>Premium Anime Wallpapers & Ringtones</h2>
-    <p>
-      Discover high-quality 4K anime wallpapers and powerful anime ringtones.
-      Built for anime lovers who want style, quality, and speed.
-    </p>
+<section class="hero">
 
-    <div class="buttons">
-      <a href="./wallpapers/">🔥 Explore Wallpapers</a>
-      <a href="./ringtones/">🎵 Explore Ringtones</a>
-    </div>
-  </section>
+  <div class="card">
+    <h2>🔥 4K Anime Wallpapers</h2>
+    <p>High-quality anime wallpapers for mobile & desktop. Naruto, Goku, Gojo and more.</p>
+    <a class="btn" href="/wallpapers/">Explore Wallpapers</a>
+  </div>
 
-  <!-- 📦 FEATURES -->
-  <section class="section">
-    <div class="cards">
-      <div class="card">
-        <h3>🖼️ 4K Wallpapers</h3>
-        <p>Ultra-high resolution anime wallpapers optimized for all devices.</p>
-        <a href="./wallpapers/">Browse</a>
-      </div>
+  <div class="card">
+    <h2>🎵 Anime Ringtones</h2>
+    <p>Download clean, high-quality anime ringtones. No ads, no clutter.</p>
+    <a class="btn" href="/ringtones/">Explore Ringtones</a>
+  </div>
 
-      <div class="card">
-        <h3>🎧 Anime Ringtones</h3>
-        <p>Clean, loud, and trending anime ringtones ready to download.</p>
-        <a href="./ringtones/">Browse</a>
-      </div>
+</section>
 
-      <div class="card">
-        <h3>⚡ Fast & Free</h3>
-        <p>No login. No limits. Just instant downloads.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔚 FOOTER -->
-  <footer>
-    © 2025 AnimeVerse • Fan-made project • All rights belong to their owners
-  </footer>
+<footer>
+  © 2025 AnimeVerse | Fan-made content
+</footer>
 
 </body>
-  </html>
+      </html>
