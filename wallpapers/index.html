@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION (KEEP) -->
+  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
   <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
 
   <title>4K Anime Wallpapers | AnimeVerse</title>
-  <meta name="description" content="Download high-quality 4K anime wallpapers. Free anime wallpapers for mobile and desktop.">
+  <meta name="description" content="Download high-quality 4K anime wallpapers for mobile and desktop.">
   <meta name="robots" content="index, follow">
 
   <style>
@@ -15,43 +15,65 @@
       margin: 0;
       padding: 20px;
       background: #0f0f0f;
-      color: #fff;
+      color: #ffffff;
       font-family: Arial, sans-serif;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
+      color: #ff4d4d;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: #141414;
       padding: 10px;
-      border-radius: 10px;
+      border-radius: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
     }
 
     .card img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
     }
 
     .card a {
       display: block;
       text-align: center;
-      margin-top: 10px;
-      color: #ff4d4d;
+      margin-top: 12px;
+      padding: 10px;
+      background: linear-gradient(135deg, #ff4d4d, #ff7a18);
+      color: #fff;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: opacity 0.2s ease;
     }
 
     .card a:hover {
-      text-decoration: underline;
+      opacity: 0.9;
     }
 
     .back {
@@ -61,6 +83,13 @@
       color: #aaa;
       text-decoration: none;
     }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 
@@ -68,10 +97,15 @@
 
   <h1>🔥 4K Anime Wallpapers</h1>
 
-  <!-- AUTO WALLPAPERS -->
-  <div class="grid" id="gallery"></div>
+  <div class="container">
+    <div class="grid" id="gallery"></div>
+  </div>
 
   <a class="back" href="../">← Back to Home</a>
+
+  <footer>
+    © 2025 AnimeVerse • All wallpapers belong to their respective owners
+  </footer>
 
   <script>
     const totalWallpapers = 72; // 👉 CHANGE ONLY THIS NUMBER
@@ -80,7 +114,7 @@
     for (let i = 1; i <= totalWallpapers; i++) {
       gallery.innerHTML += `
         <div class="card">
-          <img src="./wp${i}.jpg" loading="lazy">
+          <img src="./wp${i}.jpg" loading="lazy" alt="4K Anime Wallpaper ${i}">
           <a href="./wp${i}.jpg" download>⬇ Download 4K</a>
         </div>
       `;
@@ -88,4 +122,4 @@
   </script>
 
 </body>
-  </html>
+</html>
