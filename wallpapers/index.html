@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>4K Anime Wallpapers | AnimeVerse</title>
 
-  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
+  <!-- ✅ GOOGLE SITE VERIFICATION (KEEP THIS) -->
   <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
 
-  <title>4K Anime Wallpapers | AnimeVerse</title>
-  <meta name="description" content="Download high-quality 4K anime wallpapers for mobile and desktop.">
+  <meta name="description" content="Download high-quality 4K anime wallpapers. Naruto, Goku, Gojo and more.">
   <meta name="robots" content="index, follow">
 
   <style>
@@ -17,189 +17,93 @@
       background: #0f0f0f;
       color: #ffffff;
       font-family: Arial, sans-serif;
-      animation: fadeIn 0.6s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* 🔝 GLASS HEADER */
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(15,15,15,0.6);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      padding: 14px;
-      text-align: center;
-      margin: -20px -20px 20px;
-    }
-
-    .topbar h2 {
-      margin: 0;
-      color: #ff4d4d;
-      letter-spacing: 1px;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 40px;
       color: #ff4d4d;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #aaa;
-      margin-bottom: 30px;
-      font-size: 14px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
+      letter-spacing: 1px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      gap: 28px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .card {
-      background: #141414;
-      padding: 10px;
-      border-radius: 14px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      overflow: hidden;
+      background: linear-gradient(180deg, #141414, #0c0c0c);
+      padding: 18px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 50px rgba(255,77,77,0.25);
     }
 
     .card img {
       width: 100%;
-      aspect-ratio: 9 / 16;
+      height: 360px;
       object-fit: cover;
-      border-radius: 12px;
-      background: linear-gradient(
-        90deg,
-        #222 25%,
-        #333 37%,
-        #222 63%
-      );
-      background-size: 400% 100%;
-      animation: shimmer 1.4s infinite;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover img {
-      transform: scale(1.05);
-    }
-
-    @keyframes shimmer {
-      0% { background-position: 100% 0; }
-      100% { background-position: -100% 0; }
+      border-radius: 14px;
     }
 
     .card a {
       display: block;
-      text-align: center;
-      margin-top: 12px;
+      margin-top: 14px;
       padding: 10px;
-      background: linear-gradient(135deg, #ff4d4d, #ff7a18);
+      text-align: center;
+      background: linear-gradient(135deg, #ff4d4d, #ff784d);
       color: #fff;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.3s ease;
     }
 
     .card a:hover {
-      opacity: 0.9;
+      opacity: 0.85;
     }
 
     .back {
       display: block;
       text-align: center;
-      margin-top: 40px;
+      margin: 50px 0 20px;
       color: #aaa;
       text-decoration: none;
     }
 
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
+    .back:hover {
+      text-decoration: underline;
     }
 
-    /* 🔝 BACK TO TOP */
-    #topBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #ff4d4d;
-      border: none;
-      color: #fff;
-      padding: 12px 14px;
-      border-radius: 50%;
-      font-size: 16px;
-      cursor: pointer;
-      display: none;
-      z-index: 20;
+    @media (max-width: 600px) {
+      .card img {
+        height: 300px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- 🔝 HEADER -->
-  <header class="topbar">
-    <h2>AnimeVerse</h2>
-  </header>
-
   <h1>🔥 4K Anime Wallpapers</h1>
-  <p class="subtitle">Handpicked anime wallpapers for true fans</p>
 
-  <div class="container">
-    <div class="grid" id="gallery"></div>
-  </div>
+  <!-- WALLPAPER GRID -->
+  <div class="grid" id="gallery"></div>
 
   <a class="back" href="../">← Back to Home</a>
 
-  <footer>
-    © 2025 AnimeVerse • All wallpapers belong to their respective owners
-  </footer>
-
-  <!-- 🔝 BACK TO TOP BUTTON -->
-  <button id="topBtn">⬆</button>
-
-  <!-- ⚙️ AUTO LOAD WALLPAPERS -->
+  <!-- AUTO GENERATE WALLPAPERS -->
   <script>
-    const totalWallpapers = 72; // 👉 CHANGE ONLY THIS NUMBER
+    const totalWallpapers = 72; // 🔥 change when you add more
     const gallery = document.getElementById("gallery");
 
     for (let i = 1; i <= totalWallpapers; i++) {
-      gallery.innerHTML += `
-        <div class="card">
-          <img src="./wp${i}.jpg" loading="lazy" alt="4K Anime Wallpaper ${i}">
-          <a href="./wp${i}.jpg" download>⬇ Download 4K</a>
-        </div>
-      `;
-    }
-
-    // 🔝 BACK TO TOP LOGIC
-    const btn = document.getElementById("topBtn");
-    window.onscroll = () => {
-      btn.style.display = window.scrollY > 400 ? "block" : "none";
-    };
-    btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
-  </script>
-
-</body>
-</html>
+      gallery.innerHTML +=
