@@ -106,4 +106,14 @@
     const gallery = document.getElementById("gallery");
 
     for (let i = 1; i <= totalWallpapers; i++) {
-      gallery.innerHTML +=
+      gallery.innerHTML += `
+        <div class="card">
+          <img src="./wp${i}.jpg" loading="lazy" alt="Anime Wallpaper ${i}">
+          <a href="./wp${i}.jpg" download>⬇ Download 4K</a>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
