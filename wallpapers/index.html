@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>4K Anime Wallpapers | AnimeVerse</title>
+
+  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
   <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
-<meta name="description" content="Download high-quality 4K anime wallpapers. Naruto, Jujutsu Kaisen, One Piece and more. Free anime wallpapers.">
-<meta name="robots" content="index, follow">
+
+  <!-- SEO -->
+  <meta name="description" content="Download high-quality 4K anime wallpapers. Naruto, Gojo, Goku and more.">
+  <meta name="robots" content="index, follow">
+
   <style>
     body {
       margin: 0;
@@ -17,7 +23,20 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* 🔍 SEARCH BAR */
+    #searchInput {
+      display: block;
+      margin: 0 auto 30px;
+      width: 90%;
+      max-width: 420px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
     }
 
     .grid {
@@ -28,16 +47,13 @@
 
     .card {
       background: #141414;
-      border-radius: 12px;
-      padding: 10px;
+      padding: 15px;
+      border-radius: 10px;
     }
 
     .card img {
       width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      display: block;
+      border-radius: 8px;
     }
 
     .card a {
@@ -45,8 +61,8 @@
       text-align: center;
       margin-top: 10px;
       color: #ff4d4d;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
     }
 
     .card a:hover {
@@ -65,27 +81,46 @@
 
 <body>
 
-<h1>🔥 4K Anime Wallpapers</h1>
+  <!-- 🔍 SEARCH INPUT -->
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search wallpapers (Naruto, Gojo, Goku...)"
+    onkeyup="searchWallpapers()"
+  >
 
-<!-- AUTO GENERATED WALLPAPERS WILL APPEAR HERE -->
-<div class="grid" id="gallery"></div>
+  <h1>🔥 4K Anime Wallpapers</h1>
 
-<a class="back" href="../">← Back to Home</a>
+  <!-- AUTO GENERATED WALLPAPERS -->
+  <div class="grid" id="gallery"></div>
 
-<!-- AUTO GENERATE SCRIPT -->
-<script>
-  const totalWallpapers = 72; // 👈 CHANGE THIS NUMBER ANYTIME
-  const gallery = document.getElementById("gallery");
+  <a class="back" href="../">← Back to Home</a>
 
-  for (let i = 1; i <= totalWallpapers; i++) {
-    gallery.innerHTML += `
-      <div class="card">
-        <img src="./wp${i}.jpg" loading="lazy">
-        <a href="./wp${i}.jpg" download>⬇ Download 4K</a>
-      </div>
-    `;
-  }
-</script>
+  <!-- 🔧 AUTO GENERATE SCRIPT -->
+  <script>
+    const totalWallpapers = 72; // 👉 CHANGE THIS NUMBER ONLY
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= totalWallpapers; i++) {
+      gallery.innerHTML += `
+        <div class="card" data-title="wallpaper ${i}">
+          <img src="./wp${i}.jpg" loading="lazy" alt="Anime Wallpaper ${i}">
+          <a href="./wp${i}.jpg" download>⬇ Download 4K</a>
+        </div>
+      `;
+    }
+
+    // 🔍 SEARCH FUNCTION
+    function searchWallpapers() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const title = card.getAttribute("data-title");
+        card.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
 
 </body>
 </html>
