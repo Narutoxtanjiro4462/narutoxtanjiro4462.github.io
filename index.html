@@ -5,43 +5,44 @@
 
   <title>AnimeVerse | 4K Anime Wallpapers & Ringtones</title>
 
-  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION (URL / META) -->
-  <meta name="google-site-verification" content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
-
-  <!-- SEO -->
-  <meta name="description" content="Download high-quality 4K anime wallpapers and anime ringtones. Naruto, Gojo, Goku and more." />
-  <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
+  <meta name="google-site-verification"
+        content="CYUgvF8UjzfTyeGEHSjuqFaMzvya845tje442j5Xm1Y" />
 
   <!-- ✅ GOOGLE ADSENSE CODE (DO NOT MODIFY) -->
   <script async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656939971406021"
     crossorigin="anonymous"></script>
 
+  <!-- SEO -->
+  <meta name="description"
+        content="Download high-quality 4K anime wallpapers and anime ringtones for mobile and desktop. Naruto, Goku, Gojo and more." />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: radial-gradient(circle at top, #1a1a1a, #000);
       color: #fff;
-      font-family: Arial, sans-serif;
       text-align: center;
     }
 
     header {
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
     header h1 {
       color: #ff4d4d;
-      font-size: 36px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
 
     nav a {
       color: #fff;
+      margin: 0 12px;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
 
@@ -49,62 +50,64 @@
       color: #ff4d4d;
     }
 
-    .section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 50px 20px;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
     .card {
       background: #141414;
-      border-radius: 15px;
-      padding: 30px;
-      width: 300px;
-      box-shadow: 0 0 25px rgba(255,77,77,0.15);
+      padding: 30px 20px;
+      border-radius: 12px;
     }
 
     .card h2 {
+      color: #ff4d4d;
       margin-bottom: 10px;
     }
 
     .card p {
       color: #ccc;
-      font-size: 14px;
       margin-bottom: 20px;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 25px;
-      background: linear-gradient(45deg, #ff4d4d, #ff784d);
+      padding: 12px 20px;
+      background: #ff4d4d;
       color: #fff;
-      border-radius: 30px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .btn:hover {
-      opacity: 0.85;
+      background: #ff3333;
     }
 
     footer {
+      margin-top: 60px;
       padding: 20px;
-      font-size: 13px;
+      background: #0d0d0d;
+      font-size: 14px;
       color: #aaa;
-      border-top: 1px solid #222;
     }
 
     footer a {
       color: #aaa;
       text-decoration: none;
-      margin: 0 6px;
+      margin: 0 8px;
     }
 
     footer a:hover {
       color: #ff4d4d;
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -117,31 +120,35 @@
       <a href="/">Home</a>
       <a href="/wallpapers/">Wallpapers</a>
       <a href="/ringtones/">Ringtones</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </header>
 
-  <div class="section">
-    <div class="card">
-      <h2>🔥 4K Anime Wallpapers</h2>
-      <p>High-quality anime wallpapers for mobile & desktop.</p>
-      <a class="btn" href="/wallpapers/">Explore Wallpapers</a>
-    </div>
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <h2>🔥 4K Anime Wallpapers</h2>
+        <p>High-quality anime wallpapers for mobile & desktop.</p>
+        <a href="/wallpapers/" class="btn">Explore Wallpapers</a>
+      </div>
 
-    <div class="card">
-      <h2>🎵 Anime Ringtones</h2>
-      <p>Download clean and loud anime ringtones.</p>
-      <a class="btn" href="/ringtones/">Explore Ringtones</a>
+      <div class="card">
+        <h2>🎵 Anime Ringtones</h2>
+        <p>Download clean and loud anime ringtones.</p>
+        <a href="/ringtones/" class="btn">Explore Ringtones</a>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>
-      <a href="/privacy-policy.html">Privacy Policy</a> |
-      <a href="/terms.html">Terms & Conditions</a> |
-      <a href="/disclaimer.html">Disclaimer</a>
-    </p>
-    © 2025 AnimeVerse | Fan-made content
+    © 2025 AnimeVerse | Fan-made content  
+    <br /><br />
+    <a href="/about.html">About</a> |
+    <a href="/contact.html">Contact</a> |
+    <a href="/privacy.html">Privacy Policy</a>
   </footer>
 
 </body>
-        </html>
+</html>
