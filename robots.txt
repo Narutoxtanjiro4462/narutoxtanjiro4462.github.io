@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://narutoxtanjiro4462.github.io/sitemap.xml
+Sitemap: https://animeverse-naruto.vercel.app/sitemap.xml
